@@ -27,50 +27,18 @@ No drawing skills required. No manual dragging. Just press Enter.
 
 ---
 
-## 📦 Tech Stack
+## 🛠️ Quick Start
 
-- **Frontend**: HTML5 + CSS3 + JavaScript (Vanilla)
-- **Design Style**: Dark tech theme with purple-blue gradient accents
-- **Responsive**: Adaptive layout for desktop and mobile devices
-
----
-
-## 🛠️ Local Development
+1. Visit the website: https://yyjuan97.github.io/openvs.github.io/
+2. Click "Download" to get the client
+3. Double-click the exe to launch, input a natural language description, and press Enter to generate
 
 ### Requirements
 
-- Modern browser (Chrome / Firefox / Edge / Safari)
-- Local server (optional, for preview)
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd openvisio
-
-# Open directly in browser
-open index.html
-
-# Or use a local server
-npx serve .
-```
-
----
-
-## 📂 Directory Structure
-
-```
-openvisio/
-├── index.html          # Main page
-├── css/
-│   └── style.css       # Stylesheet
-├── js/
-│   └── main.js         # Interaction logic
-├── assets/
-│   └── demoV.mp4       # Demo video
-└── README_EN.md        # This file
-```
+- Windows 10 or later
+- Microsoft Visio 2016 or later installed
+- No Python installation required — the exe bundles its own runtime
+- Internet connection required for generating flowcharts / relationship diagrams (AI-powered)
 
 ---
 
@@ -80,18 +48,6 @@ openvisio/
 - **Project Managers**: Use swimlane diagrams to clarify responsibilities across teams
 - **System Architects**: Sketch system layers and component relationships in one sentence
 - **Students / Researchers**: Visualize ideas and algorithm workflows from papers
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
-
----
-
-## 🤝 Contributing
-
-Issues and Pull Requests are welcome!
 
 ---
 

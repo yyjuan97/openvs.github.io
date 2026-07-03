@@ -27,50 +27,18 @@
 
 ---
 
-## 📦 技术栈
+## 🛠️ 快速开始
 
-- **前端**：HTML5 + CSS3 + JavaScript (Vanilla)
-- **设计风格**：深色科技风，渐变紫蓝配色
-- **响应式**：支持桌面端与移动端自适应
-
----
-
-## 🛠️ 本地开发
+1. 进入官网：https://yyjuan97.github.io/openvs.github.io/
+2. 点击「立即下载」获取客户端
+3. 双击 exe 文件启动，输入自然语言描述，回车生成图表
 
 ### 环境要求
 
-- 现代浏览器（Chrome / Firefox / Edge / Safari）
-- 本地服务器（可选，用于预览）
-
-### 快速开始
-
-```bash
-# 克隆仓库
-git clone <repository-url>
-cd openvisio
-
-# 直接在浏览器中打开
-open index.html
-
-# 或使用本地服务器
-npx serve .
-```
-
----
-
-## 📂 目录结构
-
-```
-openvisio/
-├── index.html          # 主页面
-├── css/
-│   └── style.css       # 样式文件
-├── js/
-│   └── main.js         # 交互逻辑
-├── assets/
-│   └── demoV.mp4       # 演示视频
-└── README.md           # 本文件
-```
+- Windows 10 及以上操作系统
+- 已安装 Microsoft Visio 2016 或更高版本
+- 无需安装 Python，exe 自带运行环境
+- 生成流程图 / 关系图需联网调用 AI
 
 ---
 
@@ -80,18 +48,6 @@ openvisio/
 - **项目经理**：用泳道图划分各角色职责，让跨部门协作一目了然
 - **系统架构师**：一句话勾勒系统分层与组件关系
 - **学生 / 研究者**：把论文里的思路、算法流程可视化呈现
-
----
-
-## 📄 许可证
-
-[MIT](LICENSE)
-
----
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
 
 ---
 
