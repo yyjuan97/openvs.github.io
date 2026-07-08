@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OpenVisio — 一句话，成图</title>
-  <meta name="description" content="OpenVisio：输入自然语言描述，自动生成专业 Visio 图表。支持流程图、时序图、架构图等 6 种图表类型，无需画图技能。"/>
+  <title>OpenVS — 文字或图片，一键成图</title>
+  <meta name="description" content="OpenVS：输入自然语言描述或上传图片，自动生成专业 Visio 图表。支持流程图、时序图、架构图等 6 种图表类型，无需画图技能。"/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -21,7 +21,7 @@
             <rect x="18" y="18" width="11" height="11" rx="2" transform="rotate(45 23.5 23.5)" fill="#a78bfa"/>
           </svg>
         </span>
-        <span class="brand-name">OpenVisio</span>
+        <span class="brand-name">OpenVS</span>
       </a>
       <div class="nav-links">
         <a href="#charts">图表类型</a>
@@ -48,13 +48,15 @@
     <div class="hero-inner">
       <!-- 左：文案 -->
       <div class="hero-content">
-        <div class="hero-badge">AI 驱动 · 自然语言成图</div>
+        <div class="hero-badge">AI 驱动 · 自然语言成图 · 图片转 Visio</div>
         <h1 class="hero-title">
-          一句话<span class="accent">成图</span>
+          文字或图片
+		  <br/>
+		  <span class="accent">一键成图</span>
         </h1>
         <p class="hero-subtitle">
-          输入一句自然语言描述，自动生成专业 Visio 图表。<br/>
-          不需要画图技能，不需要手动拖拽，只需一次回车。
+          输入自然语言描述，或上传一张草图、截图、白板照片，<br/>
+          AI 自动识别并生成专业 Visio 图表，可直接编辑。
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#download">
@@ -71,7 +73,7 @@
         <div class="preview-window">
           <div class="preview-bar">
             <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-            <span class="preview-bar-title">OpenVisio</span>
+            <span class="preview-bar-title">OpenVS</span>
           </div>
           <div class="preview-body">
             <div class="preview-types">
@@ -216,8 +218,8 @@
   <section class="section section-alt" id="how">
     <div class="section-head reveal">
       <span class="section-tag">使用方式</span>
-      <h2 class="section-title">三步，从文字到专业图表</h2>
-      <p class="section-desc">全程不需要手动排版，AI 替你完成全部脏活累活。</p>
+      <h2 class="section-title">三步，从文字或图片到专业图表</h2>
+      <p class="section-desc">支持自然语言描述或上传图片，AI 替你完成全部脏活累活。</p>
     </div>
     <div class="steps">
       <div class="step reveal">
@@ -225,8 +227,8 @@
         <div class="step-icon">
           <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10 h32 a4 4 0 0 1 4 4 v20 a4 4 0 0 1 -4 4 H8 a4 4 0 0 1 -4 -4 V14 a4 4 0 0 1 4 -4 z"/><line x1="12" y1="20" x2="28" y2="20"/><line x1="12" y1="28" x2="36" y2="28"/></svg>
         </div>
-        <h3>输入描述</h3>
-        <p>用大白话写下你的流程或结构，像跟同事聊天一样。</p>
+        <h3>输入描述或上传图片</h3>
+        <p>用大白话写下流程，或直接上传手绘草图、流程截图、白板照片。</p>
       </div>
       <div class="step-arrow reveal" aria-hidden="true"><span></span></div>
       <div class="step reveal">
@@ -235,7 +237,7 @@
           <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 a18 18 0 1 0 0 36 a14 14 0 0 1 0 -28 a10 10 0 0 1 0 20 a6 6 0 0 1 0 -12" transform="scale(0.85) translate(4 4)"/></svg>
         </div>
         <h3>AI 智能解析</h3>
-        <p>大模型理解语义，自动识别节点、关系与层级结构。</p>
+        <p>大模型理解语义或识别图片内容，自动提取节点、关系与层级结构。</p>
       </div>
       <div class="step-arrow reveal" aria-hidden="true"><span></span></div>
       <div class="step reveal">
@@ -253,22 +255,36 @@
   <section class="section" id="demo">
     <div class="section-head reveal">
       <span class="section-tag">效果演示</span>
-      <h2 class="section-title">看着文字，变成图表</h2>
-      <p class="section-desc">无需任何操作，点开下方视频即可看到真实的使用全过程。</p>
+      <h2 class="section-title">看着文字或图片，变成图表</h2>
+      <p class="section-desc">点开下方视频即可看到真实的使用全过程。</p>
     </div>
 
-    <!-- 真实演示视频 -->
+    <h3 class="demo-section-title">文字成图</h3>
+    <!-- 真实演示视频：文字成图 -->
     <div class="demo-video reveal">
       <video
         controls
         preload="metadata"
         playsinline
-        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'%3E%3Crect width='1280' height='720' fill='%23161a2e'/%3E%3Ctext x='640' y='370' font-family='sans-serif' font-size='34' fill='%238b5cf6' text-anchor='middle'%3EOpenVisio 使用演示%3C/text%3E%3C/svg%3E">
+        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'%3E%3Crect width='1280' height='720' fill='%23161a2e'/%3E%3Ctext x='640' y='370' font-family='sans-serif' font-size='34' fill='%238b5cf6' text-anchor='middle'%3EOpenVS 文字转Visio使用演示%3C/text%3E%3C/svg%3E">
         <source src="./demoV.mp4" type="video/mp4"/>
-        你的浏览器不支持视频播放，请下载 exe 体验完整功能。
+        你的浏览器不支持视频播放，请下载客户端体验完整功能。
       </video>
     </div>
 
+    <!-- 图片转 Visio 演示视频 -->
+    <h3 class="demo-section-title">图片转 Visio</h3>
+    <div class="demo-video reveal">
+      <video
+        controls
+        preload="metadata"
+        playsinline
+        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'%3E%3Crect width='1280' height='720' fill='%23161a2e'/%3E%3Ctext x='640' y='370' font-family='sans-serif' font-size='34' fill='%238b5cf6' text-anchor='middle'%3EOpenVS 图片转 Visio 使用演示%3C/text%3E%3C/svg%3E">
+        <source src="./demoV2.mp4" type="video/mp4"/>
+        你的浏览器不支持视频播放，请下载客户端体验完整功能。
+      </video>
+    </div>
+  <!-- 
     <div class="demo-wrap reveal">
       <div class="demo-input">
         <div class="demo-input-head"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="demo-input-title">输入描述</span></div>
@@ -280,14 +296,14 @@
       <div class="demo-output">
         <div class="demo-output-head">生成的流程图</div>
         <svg class="demo-svg" viewBox="0 0 260 220" preserveAspectRatio="xMidYMid meet">
-          <!-- 节点 -->
+      
           <g class="d-node" data-i="0"><rect x="100" y="6" width="60" height="22" rx="11" fill="#6366f1" opacity="0.85"/><text x="130" y="21" text-anchor="middle" fill="#fff" font-size="10">开始</text></g>
           <g class="d-node" data-i="1"><polygon points="130,40 168,60 130,80 92,60" fill="#2a2a44" stroke="#8b5cf6" stroke-width="2"/><text x="130" y="64" text-anchor="middle" fill="#c4b5fd" font-size="9">选择方式</text></g>
           <g class="d-node" data-i="2"><rect x="40" y="92" width="56" height="26" rx="3" fill="#2a2a44" stroke="#3b82f6" stroke-width="2"/><text x="68" y="108" text-anchor="middle" fill="#bfdbfe" font-size="9">手机验证</text></g>
           <g class="d-node" data-i="3"><rect x="164" y="92" width="56" height="26" rx="3" fill="#2a2a44" stroke="#3b82f6" stroke-width="2"/><text x="192" y="108" text-anchor="middle" fill="#bfdbfe" font-size="9">邮箱验证</text></g>
           <g class="d-node" data-i="4"><polygon points="130,128 168,148 130,168 92,148" fill="#2a2a44" stroke="#8b5cf6" stroke-width="2"/><text x="130" y="152" text-anchor="middle" fill="#c4b5fd" font-size="9">是否通过</text></g>
           <g class="d-node" data-i="5"><rect x="100" y="180" width="60" height="22" rx="11" fill="#6366f1" opacity="0.85"/><text x="130" y="195" text-anchor="middle" fill="#fff" font-size="10">结束</text></g>
-          <!-- 连线 -->
+        
           <path class="d-edge" data-i="0" d="M130 28 L130 40" stroke="#8b5cf6" stroke-width="2" fill="none"/>
           <path class="d-edge" data-i="1" d="M108 70 Q68 80 68 92" stroke="#3b82f6" stroke-width="2" fill="none"/>
           <path class="d-edge" data-i="2" d="M152 70 Q192 80 192 92" stroke="#3b82f6" stroke-width="2" fill="none"/>
@@ -298,13 +314,15 @@
       </div>
     </div>
     <p class="demo-caption reveal">动画自动循环播放 · 实际使用中仅需一次回车即可完成</p>
+	
+	  节点 -->
   </section>
 
   <!-- ============ 适用人群 ============ -->
   <section class="section section-alt" id="audience">
     <div class="section-head reveal">
       <span class="section-tag">适用人群</span>
-      <h2 class="section-title">谁在用 OpenVisio</h2>
+      <h2 class="section-title">谁在用 OpenVS</h2>
       <p class="section-desc">只要你需要把想法变成图表，它就适合你。</p>
     </div>
     <div class="audience-grid">
@@ -321,7 +339,7 @@
       <div class="audience-card reveal">
         <div class="audience-emoji">🏗️</div>
         <h3>系统架构师</h3>
-        <p>一句话勾勒系统分层与组件关系，省去逐个拖拽框图的时间。</p>
+        <p>输入一段描述勾勒系统分层与组件关系，省去逐个拖拽框图的时间。</p>
       </div>
       <div class="audience-card reveal">
         <div class="audience-emoji">🎓</div>
@@ -334,24 +352,25 @@
   <!-- ============ 下载 ============ -->
   <section class="section download-section" id="download">
     <div class="download-card reveal">
-      <h2 class="section-title">现在开始，一句话成图</h2>
+      <h2 class="section-title">现在开始，文字或图片一键成图</h2>
       <p class="section-desc">免费下载，无需安装 ，双击即可使用。</p>
       <div class="download-actions">
         <a class="btn btn-primary btn-lg" href="./OpenVS4.1.zip" id="downloadBtn" download="OpenVS4.1.zip">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          下载 OpenVisio 
+          下载 OpenVS
         </a>
       </div>
       <ul class="req-list">
         <li><span class="check">✓</span> Windows 10 及以上操作系统</li>
         <li><span class="check">✓</span> 已安装 Microsoft Visio 2016 或更高版本</li>
         <li><span class="check">✓</span> 无需安装 Python，exe 自带运行环境</li>
-        <li><span class="check">✓</span> 生成流程图 / 关系图需联网调用 AI</li>
+        <li><span class="check">✓</span> 支持文字描述或图片上传两种输入方式</li>
+        <li><span class="check">✓</span> 快速生成流程图 / 关系图 / 架构图 / 时序图 / 泳道图  / 功能组成图</li>
       </ul>
       <div class="usage-steps">
         <div class="usage-step"><strong>① 下载</strong><span>获取 exe 文件</span></div>
         <div class="usage-step"><strong>② 启动</strong><span>双击自动打开浏览器</span></div>
-        <div class="usage-step"><strong>③ 成图</strong><span>输入文本，回车</span></div>
+        <div class="usage-step"><strong>③ 成图</strong><span>输入文字或上传图片</span></div>
       </div>
     </div>
   </section>
@@ -361,10 +380,10 @@
     <div class="footer-inner">
       <div class="brand">
         <span class="brand-mark"><svg viewBox="0 0 32 32" width="22" height="22"><rect x="3" y="3" width="11" height="11" rx="2" fill="#6366f1"/><rect x="18" y="3" width="11" height="11" rx="6" fill="#3b82f6"/><rect x="3" y="18" width="11" height="11" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/><rect x="18" y="18" width="11" height="11" rx="2" transform="rotate(45 23.5 23.5)" fill="#a78bfa"/></svg></span>
-        <span>OpenVisio</span>
+        <span>OpenVS</span>
       </div>
-      <p class="footer-tag">一句话，成图。</p>
-      <p class="footer-copy">© 2026 OpenVisio · 自然语言驱动的 Visio 图表生成工具</p>
+      <p class="footer-tag">文字或图片，一键成图。</p>
+      <p class="footer-copy">© 2026 OpenVS · 自然语言与图片驱动的 Visio 图表生成工具</p>
     </div>
   </footer>
 

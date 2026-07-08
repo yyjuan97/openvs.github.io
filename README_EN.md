@@ -1,6 +1,6 @@
-# OpenVisio
+# OpenVS
 
-> One sentence, one diagram. Generate professional Visio charts from natural language descriptions.
+> One sentence, one diagram. Generate professional Visio charts from natural language descriptions or images.
 
 [中文](README.md) | [English](README_EN.md)
 
@@ -8,7 +8,7 @@
 
 ## ✨ Overview
 
-**OpenVisio** is a natural language-driven Visio diagram generation tool. Simply input a natural language description, and AI will automatically understand the semantics, identify nodes and relationships, and generate professional, editable `.vsdx` files.
+**OpenVS** is a natural language and image-driven Visio diagram generation tool. Simply input a natural language description, or upload a sketch, screenshot, or whiteboard photo, and AI will automatically understand the semantics, recognize the image content, and generate professional, editable `.vsdx` files.
 
 No drawing skills required. No manual dragging. Just press Enter.
 
@@ -38,7 +38,8 @@ No drawing skills required. No manual dragging. Just press Enter.
 - Windows 10 or later
 - Microsoft Visio 2016 or later installed
 - No Python installation required — the exe bundles its own runtime
-- Internet connection required for generating flowcharts / relationship diagrams (AI-powered)
+- Supports both text description and image upload input methods
+- Internet connection required for generating flowcharts / relationship diagrams / image-to-Visio (AI-powered)
 
 ---
 
@@ -51,4 +52,4 @@ No drawing skills required. No manual dragging. Just press Enter.
 
 ---
 
-<p align="center">© 2026 OpenVisio · Natural Language-Driven Visio Diagram Generation Tool</p>
+© 2026 OpenVS · Natural Language & Image-Driven Visio Diagram Generation Tool
