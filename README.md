@@ -1,55 +1,56 @@
 # OpenVS
 
-> 文字或图片，一键成图。输入自然语言描述或上传图片，自动生成专业 Visio 图表。
+> One sentence, one diagram. Generate professional Visio charts from natural language descriptions or images.
 
-[English](README_EN.md) | [中文](README.md)
-
----
-
-## ✨ 项目简介
-
-**OpenVS** 是一款自然语言与图片驱动的 Visio 图表生成工具。用户只需输入一段自然语言描述，或上传一张草图、截图、白板照片，AI 即可自动理解语义、识别图片内容，并生成专业、可编辑的 `.vsdx` 文件。
-
-无需画图技能，无需手动拖拽，只需一次回车。
+[中文](README_CN.md) | [English](README.md)
 
 ---
 
-## 🚀 支持的图形功能
+## ✨ Overview
 
-| 功能 | 描述 |
-|------|------|
-| **流程图** | 将工作流程拆解为清晰的步骤与分支判断 |
-| **时序图** | 展示多角色之间按时间顺序的交互与消息往来 |
-| **功能组成图** | 将系统功能模块逐层拆解为树状结构 |
-| **关系图** | 描述组件之间的接口提供与依赖关系 |
-| **架构图** | 用分层结构呈现系统各层级与组成模块 |
-| **泳道图** | 按角色分泳道，清晰呈现跨部门协作流程 |
+**OpenVS** is a natural language and image-driven Visio diagram generation tool. Simply input a natural language description, or upload a sketch, screenshot, or whiteboard photo, and AI will automatically understand the semantics, recognize the image content, and generate professional, editable `.vsdx` files.
+
+No drawing skills required. No manual dragging. Just press Enter.
 
 ---
 
-## 🛠️ 快速开始
+## 🚀 Features
 
-1. 进入官网：https://yyjuan97.github.io/openvs.github.io/
-2. 点击「立即下载」获取客户端
-3. 双击 exe 文件启动，输入自然语言描述，回车生成图表
-
-### 环境要求
-
-- Windows 10 及以上操作系统
-- 已安装 Microsoft Visio 2016 或更高版本
-- 无需安装 Python，exe 自带运行环境
-- 支持文字描述或图片上传两种输入方式
-- 生成流程图 / 关系图 / 图片转 Visio 需联网调用 AI
+| Feature | Description |
+|---------|-------------|
+| **Image to Visio** | Upload sketches, screenshots, or whiteboard photos; AI automatically recognizes and converts them into standard Visio diagrams |
+| **Flowchart** | Break down workflows into clear steps and decision branches |
+| **Sequence Diagram** | Show interactions and message exchanges between multiple roles over time |
+| **Functional Decomposition** | Decompose system modules into hierarchical tree structures |
+| **Relationship Diagram** | Describe interface provision and dependency relationships between components |
+| **Architecture Diagram** | Present system layers and constituent modules in a layered structure |
+| **Swimlane Diagram** | Organize cross-departmental collaboration by roles in swimlanes |
 
 ---
 
-## 🎯 适用人群
+## 🛠️ Quick Start
 
-- **产品经理**：把模糊的业务需求快速梳理成流程图
-- **项目经理**：用泳道图划分各角色职责，让跨部门协作一目了然
-- **系统架构师**：一句话描述系统分层与组件关系
-- **学生 / 研究者**：把论文里的思路、算法流程可视化呈现
+1. Visit the website: https://yyjuan97.github.io/openvs.github.io/
+2. Click "Download" to get the client
+3. Double-click the exe to launch, input a natural language description, and press Enter to generate
+
+### Requirements
+
+- Windows 10 or later
+- Microsoft Visio 2016 or later installed
+- No Python installation required — the exe bundles its own runtime
+- Supports both text description and image upload input methods
+- Internet connection required for generating flowcharts / relationship diagrams / image-to-Visio (AI-powered)
 
 ---
 
-© 2026 OpenVS · 自然语言与图片驱动的 Visio 图表生成工具
+## 🎯 Target Users
+
+- **Product Managers**: Quickly turn vague business requirements into flowcharts
+- **Project Managers**: Use swimlane diagrams to clarify responsibilities across teams
+- **System Architects**: Sketch system layers and component relationships in one sentence
+- **Students / Researchers**: Visualize ideas and algorithm workflows from papers
+
+---
+
+<p align="center">© 2026 OpenVS · Natural Language & Image-Driven Visio Diagram Generation Tool</p>
