@@ -43,6 +43,36 @@
 
 ---
 
+## 🧩 OpenVS Skills（面向开发者 / AI Agent）
+
+除桌面客户端外，仓库还提供纯本地的 **OpenVS Skills 工具包**（位于 `OpenVS_Skills/`）。配合你自己的 AI Agent（Codex / Cursor / Claude 等），由 Agent 解析文本或图片并产出结构化 JSON，脚本在本地完成校验、自动布局，并调用本机 Visio 渲染成可编辑的 `.vsdx` 文件。**无需联网、无需 API Key**，AI 能力来自你自己的 Agent。
+
+**环境要求**：Windows + Microsoft Visio、Python 3.10+。在 `OpenVS_Skills/openvs-visio/scripts` 下执行：
+
+```bash
+pip install -r requirements.txt
+```
+
+> Graphviz 已随包携带在 `graphviz-bin/`，无需单独安装。
+
+**安装到 Agent**：把 `openvs-visio/` 目录复制到对应工具的 skills 目录（如 Claude Code 等遵循 Agent Skills 规范的工具按其约定放置），并保持 `openvs-visio/SKILL.md` 目录结构不变。
+
+**命令行直接使用**（也可自行按规范准备 JSON，不依赖 Agent）：
+
+```bash
+# 文本转图表，--type 可选 flowchart / sequence / composition / component / architecture / swimlane
+python scripts/generate.py --type flowchart --json data.json -o 流程图.vsdx
+
+# 图片转图表
+python scripts/render_image.py --json analysis.json -o 架构图.vsdx
+```
+
+JSON 格式规范见 `openvs-visio/references/`；加 `--dry-run` 只做校验和布局、不启动 Visio。退出码 3 表示 JSON 数据错误，1 表示渲染错误。
+
+**限制**：仅支持 Windows + Microsoft Visio；只生成新的 `.vsdx`，不支持编辑已有文件，也不输出 png/pdf；图片解析质量取决于所用 Agent 的视觉能力。
+
+---
+
 ## 🎯 适用人群
 
 - **产品经理**：把模糊的业务需求快速梳理成流程图

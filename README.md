@@ -44,6 +44,36 @@ No drawing skills required. No manual dragging. Just press Enter.
 
 ---
 
+## 🧩 OpenVS Skills (for Developers / AI Agents)
+
+Besides the desktop client, the repository also ships a fully local **OpenVS Skills toolkit** (under `OpenVS_Skills/`). Pair it with your own AI Agent (Codex / Cursor / Claude, etc.): the Agent parses text or images into structured JSON, while local scripts validate it, lay it out automatically, and render an editable `.vsdx` file via the local Visio installation. **No internet or API Key required** — AI capability comes entirely from your own Agent.
+
+**Requirements**: Windows + Microsoft Visio, Python 3.10+. From `OpenVS_Skills/openvs-visio/scripts`, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+> Graphviz is bundled in `graphviz-bin/`, so no separate install is needed.
+
+**Install into an Agent**: copy the `openvs-visio/` folder into your tool's skills directory (for Claude Code and other Agent-Skills-compliant tools, follow their convention), keeping the `openvs-visio/SKILL.md` structure intact.
+
+**Command-line usage** (you can also prepare the JSON yourself, without an Agent):
+
+```bash
+# Text to diagram; --type: flowchart / sequence / composition / component / architecture / swimlane
+python scripts/generate.py --type flowchart --json data.json -o flowchart.vsdx
+
+# Image to diagram
+python scripts/render_image.py --json analysis.json -o architecture.vsdx
+```
+
+JSON schemas live in `openvs-visio/references/`; add `--dry-run` to validate and lay out only, without launching Visio. Exit code 3 means a JSON data error; 1 means a render error.
+
+**Limitations**: Windows + Microsoft Visio only; generates new `.vsdx` files but cannot edit existing ones and does not export png/pdf; image-parsing quality depends on the Agent's vision capability.
+
+---
+
 ## 🎯 Target Users
 
 - **Product Managers**: Quickly turn vague business requirements into flowcharts
